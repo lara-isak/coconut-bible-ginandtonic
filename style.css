@@ -1,0 +1,27 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  color: #a50b5e;
+}
+
+.score {
+  display: flex;
+}
+
+.fleabagScore::after {
+  content: " :" ;
+}
+
+.hotPriestScore::before {
+  /* Unicode for non breaking space */
+  content: "\00a0";
+}
