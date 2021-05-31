@@ -55,8 +55,28 @@ function playRound(val) {
     display.textContent = "It's a tie!";
   }
 
-  // gameOver();
+  gameOver();
 }
 
+function gameOver() {
+  if(fleabagScore === 5) {
+    display.textContent = "Game Over! You won!";
+    toggleButtonsAbility();
+  }
+  else if(hotPriestScore === 5) {
+    display.textContent = "Game Over! You lost!";
+    toggleButtonsAbility();
+  }
+}
 
+function toggleButtonsAbility() {
+  for(let i = 0; i < select.length; i++) {
+    if(select[i].disabled === false) {
+      select[i].disabled = true;
+    }
+    else {
+      select[i].disabled = false;
+    }
+  }
+}
 
