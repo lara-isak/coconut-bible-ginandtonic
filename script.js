@@ -80,3 +80,12 @@ function toggleButtonsAbility() {
   }
 }
 
+function gameReset() {
+  fleabagScore = 0;
+  hotPriestScore = 0;
+  displayFleabagScore.textContent = fleabagScore;
+  displayHotPriestScore.textContent = hotPriestScore;
+  display.textContent = "";
+  toggleButtonsAbility();
+}
+
