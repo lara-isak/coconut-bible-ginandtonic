@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coconut-Bible-G&T</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Coconut-Bible-G&T</h1>
+  <div class="score">
+    <p class="fleabagScore"></p>
+    <p class="hotPriestScore"></p>
+  </div>
+
+  <button value="coconut" onClick="playRound(this.value)" class="gameButtons">Coconut</button>
+  <button value="bible" onClick="playRound(this.value)" class="gameButtons">Bible</button>
+  <button value="g&t" onClick="playRound(this.value)" class="gameButtons">G&T</button>
+
+  <p id="test"></p>
+
+  <button onclick="gameReset()">Game Reset</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
