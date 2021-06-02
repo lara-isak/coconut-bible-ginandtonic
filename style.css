@@ -5,12 +5,18 @@
   box-sizing: border-box;
 }
 
+/* General */
 html, body {
   font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+h1 {
+
 }
 
 main {
@@ -18,10 +24,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-h1 {
-  color: #a50b5e;
+  width: 100%;
 }
 
 .score {
@@ -35,4 +38,45 @@ h1 {
 .hotPriestScore::before {
   /* Unicode for non breaking space */
   content: "\00a0";
+}
+
+/* Game Buttons */
+
+.gameButtonsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 15% 0;
+}
+
+.gameButton {
+  border: none;
+  background: none;
+}
+
+img {
+  width: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+  .gameButtonsContainer {
+    width: 90%;
+    justify-content: space-between;
+    margin: 10% 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .gameButtonsContainer {
+    width: 80%;
+    margin: 5% 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .gameButtonsContainer {
+    width: 60%;
+    justify-content: space-around;
+    margin: 5% 0;
+  }
 }
