@@ -50,6 +50,14 @@ main {
   content: "\00a0";
 }
 
+#gameText {
+  height: 3vh;
+  text-align: center;
+  color: #e2e2e7;
+  font-size: 4.5vw;
+  letter-spacing: 0.04em;
+}
+
 /* Game Buttons */
 
 .gameButtonsContainer {
@@ -72,7 +80,7 @@ main {
 }
 
 img {
-  width: 80%;
+  width: 70%;
 }
 
 @media only screen and (min-width: 43em) {
@@ -103,5 +111,13 @@ img {
 
   .score {
     font-size: 4em;
+  }
+
+  #gameText {
+    font-size: 3.5em;
+  }
+
+  img {
+    width: 80%;
   }
 }
