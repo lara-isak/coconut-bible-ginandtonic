@@ -16,6 +16,7 @@ html, body {
   width: 100%;
 }
 
+/* Header */
 h1 {
   font-size: 6.5vw;
   color: #da1f26;
@@ -23,6 +24,8 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.15em;;
 }
+
+/* Main Section */
 
 main {
   display: flex;
@@ -34,6 +37,8 @@ main {
 
 .score {
   display: flex;
+  color: #e2e2e7;
+  font-size: 5vw;
 }
 
 .fleabagScore::after {
@@ -94,5 +99,9 @@ img {
 
   h1 {
     font-size: 5.5em;
+  }
+
+  .score {
+    font-size: 4em;
   }
 }
