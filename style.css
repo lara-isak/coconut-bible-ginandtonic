@@ -52,6 +52,13 @@ main {
 .gameButton {
   border: none;
   background: none;
+  /* ease is the default value of the transition timing function */
+  transition: transform 250ms;
+}
+
+.gameButton:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 
 img {
