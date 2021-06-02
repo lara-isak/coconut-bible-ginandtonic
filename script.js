@@ -1,8 +1,8 @@
 const choices = ["coconut", "bible", "g&t"];
 let hotPriestScore = 0;
 let fleabagScore = 0;
-const select = document.querySelectorAll('.gameButtons');
-const display = document.querySelector('#test');
+const selectButtons = document.querySelectorAll('.gameButton');
+const displayText = document.querySelector('#gameText');
 const displayFleabagScore = document.querySelector('.fleabagScore');
 const displayHotPriestScore = document.querySelector('.hotPriestScore');
 
@@ -14,6 +14,8 @@ function hotPriestPlay() {
   return choices[randomNum];
 }
 
+// selectButtons.forEach(button => )
+
 function playRound(val) {
   const fleabagChoice = val;
   console.log(fleabagChoice);
@@ -24,35 +26,35 @@ function playRound(val) {
   if(fleabagChoice === "g&t" && hotPriestChoice === "bible") {
     fleabagScore++;
     displayFleabagScore.textContent = fleabagScore;
-    display.textContent = "You won! G&T spills all over bible";
+    displayText.textContent = "You won! G&T spills all over bible";
   }
   else if(fleabagChoice === "g&t" && hotPriestChoice === "coconut") {
     hotPriestScore++;
     displayHotPriestScore.textContent = hotPriestScore;
-    display.textContent = "You lose! Coconut smashes G&T can";
+    displayText.textContent = "You lose! Coconut smashes G&T can";
   }
   else if(fleabagChoice === "bible" && hotPriestChoice === "coconut") {
     fleabagScore++;
     displayFleabagScore.textContent = fleabagScore;
-    display.textContent = "You win! Bible covers coconut";
+    displayText.textContent = "You win! Bible covers coconut";
   }
   else if(fleabagChoice === "bible" && hotPriestChoice === "g&t") {
     hotPriestScore++;
     displayHotPriestScore.textContent = hotPriestScore;
-    display.textContent = "You lose! G&T spills all over bible";
+    displayText.textContent = "You lose! G&T spills all over bible";
   }
   else if(fleabagChoice === "coconut" && hotPriestChoice === "g&t") {
     fleabagScore++;
     displayFleabagScore.textContent = fleabagScore;
-    display.textContent = "You win! Coconut smashes G&T can";
+    displayText.textContent = "You win! Coconut smashes G&T can";
   }
   else if(fleabagChoice === "coconut" && hotPriestChoice === "bible") {
     hotPriestScore++;
     displayHotPriestScore.textContent = hotPriestScore;
-    display.textContent = "You lose! Bible covers coconut";
+    displayText.textContent = "You lose! Bible covers coconut";
   }
   else {
-    display.textContent = "It's a tie!";
+    displayText.textContent = "It's a tie!";
   }
 
   gameOver();
@@ -60,22 +62,22 @@ function playRound(val) {
 
 function gameOver() {
   if(fleabagScore === 5) {
-    display.textContent = "Game Over! You won!";
+    displayText.textContent = "Game Over! You won!";
     toggleButtonsAbility();
   }
   else if(hotPriestScore === 5) {
-    display.textContent = "Game Over! You lost!";
+    displayText.textContent = "Game Over! You lost!";
     toggleButtonsAbility();
   }
 }
 
 function toggleButtonsAbility() {
-  for(let i = 0; i < select.length; i++) {
-    if(select[i].disabled === false) {
-      select[i].disabled = true;
+  for(let i = 0; i < selectButtons.length; i++) {
+    if(selectButtons[i].disabled === false) {
+      selectButtons[i].disabled = true;
     }
     else {
-      select[i].disabled = false;
+      selectButtons[i].disabled = false;
     }
   }
 }
@@ -85,7 +87,7 @@ function gameReset() {
   hotPriestScore = 0;
   displayFleabagScore.textContent = fleabagScore;
   displayHotPriestScore.textContent = hotPriestScore;
-  display.textContent = "";
+  displayText.textContent = "";
   toggleButtonsAbility();
 }
 
