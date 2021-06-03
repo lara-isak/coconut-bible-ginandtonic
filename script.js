@@ -26,32 +26,32 @@ function playRound(val) {
   if(fleabagChoice === "g&t" && hotPriestChoice === "bible") {
     fleabagScore++;
     displayFleabagScore.textContent = fleabagScore;
-    displayText.textContent = "You won! G&T spills all over bible";
+    displayText.textContent = "Yesss! G&T spills all over Bible";
   }
   else if(fleabagChoice === "g&t" && hotPriestChoice === "coconut") {
     hotPriestScore++;
     displayHotPriestScore.textContent = hotPriestScore;
-    displayText.textContent = "You lose! Coconut smashes G&T can";
+    displayText.textContent = "Shit! Coconut smashes G&T can";
   }
   else if(fleabagChoice === "bible" && hotPriestChoice === "coconut") {
     fleabagScore++;
     displayFleabagScore.textContent = fleabagScore;
-    displayText.textContent = "You win! Bible covers coconut";
+    displayText.textContent = "Yesss! Bible covers Coconut";
   }
   else if(fleabagChoice === "bible" && hotPriestChoice === "g&t") {
     hotPriestScore++;
     displayHotPriestScore.textContent = hotPriestScore;
-    displayText.textContent = "You lose! G&T spills all over bible";
+    displayText.textContent = "Shit! G&T spills all over Bible";
   }
   else if(fleabagChoice === "coconut" && hotPriestChoice === "g&t") {
     fleabagScore++;
     displayFleabagScore.textContent = fleabagScore;
-    displayText.textContent = "You win! Coconut smashes G&T can";
+    displayText.textContent = "Yesss! Coconut smashes G&T can";
   }
   else if(fleabagChoice === "coconut" && hotPriestChoice === "bible") {
     hotPriestScore++;
     displayHotPriestScore.textContent = hotPriestScore;
-    displayText.textContent = "You lose! Bible covers coconut";
+    displayText.textContent = "Shit! Bible covers Coconut";
   }
   else {
     displayText.textContent = "It's a tie!";
