@@ -5,6 +5,8 @@ const selectButtons = document.querySelectorAll('.gameButton');
 const displayText = document.querySelector('#gameText');
 const displayFleabagScore = document.querySelector('.fleabagScore');
 const displayHotPriestScore = document.querySelector('.hotPriestScore');
+let displayFleabagChoice = document.querySelector('.fleabagChoice');
+let displayHotPriestChoice = document.querySelector('.priestChoice');
 
 displayFleabagScore.textContent = fleabagScore;
 displayHotPriestScore.textContent = hotPriestScore;
@@ -14,14 +16,12 @@ function hotPriestPlay() {
   return choices[randomNum];
 }
 
-// selectButtons.forEach(button => )
-
 function playRound(val) {
   const fleabagChoice = val;
-  console.log(fleabagChoice);
+  displayFleabagChoice.textContent = fleabagChoice;
 
   const hotPriestChoice = hotPriestPlay();
-  console.log(hotPriestChoice);
+  displayHotPriestChoice.textContent = hotPriestChoice;
 
   if(fleabagChoice === "g&t" && hotPriestChoice === "bible") {
     fleabagScore++;
@@ -88,6 +88,8 @@ function gameReset() {
   displayFleabagScore.textContent = fleabagScore;
   displayHotPriestScore.textContent = hotPriestScore;
   displayText.textContent = "";
+  displayFleabagChoice.textContent = "";
+  displayHotPriestChoice.textContent = "";
   toggleButtonsAbility();
 }
 
