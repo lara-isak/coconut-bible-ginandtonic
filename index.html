@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -21,6 +22,10 @@
     </div>
   
     <p id="gameText"></p>
+
+    <button onclick="gameReset()" class="resetBtn">
+      <span class="material-icons-outlined">restart_alt</span>
+    </button>
   
     <div class="gameButtonsContainer">
       <button value="coconut" onClick="playRound(this.value)" class="gameButton"><img src="images/coconut.png" alt="Coconut"></button>
@@ -28,7 +33,6 @@
       <button value="g&t" onClick="playRound(this.value)" class="gameButton"><img src="images/can.png" alt="G&T"></button>
     </div>
 
-    <button onclick="gameReset()">Game Reset</button>
   </main>
 
   <footer></footer>
