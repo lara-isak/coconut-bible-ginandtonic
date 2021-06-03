@@ -52,11 +52,27 @@ main {
 }
 
 #gameText {
-  height: 3vh;
+  /* border: 1px solid red; */
+  height: 4.5vh;
   text-align: center;
   color: #e2e2e7;
   font-size: 4.5vw;
   letter-spacing: 0.04em;
+}
+
+.resetBtn {
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+}
+
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 5vw;
+  display: inline-block;
+  color: #e2e2e7;
 }
 
 /* Game Buttons */
@@ -139,6 +155,10 @@ footer:before {
 
   #gameText {
     font-size: 3.5em;
+  }
+
+  .material-icons-outlined {
+    font-size: 4em;
   }
 
   img {
