@@ -167,7 +167,7 @@ footer::after {
   right: 55%;
   z-index: 1;
   transition: transform 2000ms;
-  background: url(/images/guinea-pig.png) no-repeat;
+  background: url("https://github.com/lara-isak/coconut-bible-ginandtonic/blob/main/images/guinea-pig.png?raw=true") no-repeat;
   background-size: contain;
 }
 
@@ -179,7 +179,7 @@ footer::after {
   left: 55%;
   z-index: 1;
   transition: transform 2000ms;
-  background: url(/images/fox.png) no-repeat;
+  background: url("https://github.com/lara-isak/coconut-bible-ginandtonic/blob/main/images/fox.png?raw=true") no-repeat;
   background-size: contain;
 }
 
