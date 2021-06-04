@@ -7,6 +7,8 @@ const displayFleabagScore = document.querySelector('.fleabagScore');
 const displayHotPriestScore = document.querySelector('.hotPriestScore');
 let displayFleabagChoice = document.querySelector('.fleabagChoice');
 let displayHotPriestChoice = document.querySelector('.priestChoice');
+const fleabagSpiritAnimal = document.querySelector('.fleabagSpiritAnimal');
+const priestSpiritAnimal = document.querySelector('.priestSpiritAnimal');
 
 displayFleabagScore.textContent = fleabagScore;
 displayHotPriestScore.textContent = hotPriestScore;
@@ -63,10 +65,12 @@ function playRound(val) {
 function gameOver() {
   if(fleabagScore === 5) {
     displayText.textContent = "Game Over! You won!";
+    fleabagSpiritAnimal.style.transform = "translateY(-100px)";
     toggleButtonsAbility();
   }
   else if(hotPriestScore === 5) {
     displayText.textContent = "Game Over! You lost!";
+    priestSpiritAnimal.style.transform = "translateY(-100px)";
     toggleButtonsAbility();
   }
 }
@@ -90,6 +94,8 @@ function gameReset() {
   displayText.textContent = "";
   displayFleabagChoice.textContent = "";
   displayHotPriestChoice.textContent = "";
+  fleabagSpiritAnimal.style.transform = "translateY(100px)";
+  priestSpiritAnimal.style.transform = "translateY(100px)";
   toggleButtonsAbility();
 }
 
