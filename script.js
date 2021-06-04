@@ -94,8 +94,8 @@ function gameReset() {
   displayText.textContent = "";
   displayFleabagChoice.textContent = "";
   displayHotPriestChoice.textContent = "";
-  fleabagSpiritAnimal.style.transform = "translateY(100px)";
-  priestSpiritAnimal.style.transform = "translateY(100px)";
+  fleabagSpiritAnimal.style.transform = "translateY(0px)";
+  priestSpiritAnimal.style.transform = "translateY(0px)";
   toggleButtonsAbility();
 }
 
