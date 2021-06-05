@@ -24,7 +24,7 @@ html, body {
 h1 {
   font-size: 6.5vw;
   color: #da1f26;
-  margin: 5% 0;
+  margin: 8% 0;
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
@@ -42,7 +42,7 @@ main {
 .score {
   display: flex;
   color: #e2e2e7;
-  font-size: 5vw;
+  font-size: 6.5vw;
 }
 
 .fleabagScore::after {
@@ -78,7 +78,7 @@ main {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 5vw;
+  font-size: 6.5vw;
   display: inline-block;
   color: #e2e2e7;
 }
@@ -105,22 +105,21 @@ main {
 }
 
 .gameButton > img {
-  width: 70%;
+  width: 60%;
 }
 
 /* Players */
 
 .players {
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
 }
 
 .players p {
-  width: 10vw;
   color: #e2e2e7;
-  font-size: 4vw;
-  letter-spacing: 0.04em;
+  font-size: 5.5vw;
+  letter-spacing: 0.05em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -128,11 +127,13 @@ main {
 .fleabag p:first-child, 
 .priest p:first-child {
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .fleabag p:last-child, 
 .priest p:last-child {
   text-transform: capitalize;
+  font-size: 5vw;
 }
 
 /* Footer */
