@@ -22,7 +22,7 @@ html, body {
 /* Header */
 
 h1 {
-  font-size: 6.5vw;
+  font-size: 10vw;
   color: #da1f26;
   margin: 8% 0;
   text-transform: uppercase;
@@ -42,7 +42,7 @@ main {
 .score {
   display: flex;
   color: #e2e2e7;
-  font-size: 6.5vw;
+  font-size: 9vw;
 }
 
 .fleabagScore::after {
@@ -58,7 +58,7 @@ main {
   height: 4.5vh;
   text-align: center;
   color: #e2e2e7;
-  font-size: 4.5vw;
+  font-size: 6vw;
   letter-spacing: 0.04em;
   margin: 10px 0;
 }
@@ -78,7 +78,7 @@ main {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 6.5vw;
+  font-size: 9vw;
   display: inline-block;
   color: #e2e2e7;
 }
@@ -111,14 +111,14 @@ main {
 /* Players */
 
 .players {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
 }
 
 .players p {
   color: #e2e2e7;
-  font-size: 5.5vw;
+  font-size: 7vw;
   letter-spacing: 0.05em;
   text-align: center;
   text-transform: uppercase;
@@ -133,7 +133,7 @@ main {
 .fleabag p:last-child, 
 .priest p:last-child {
   text-transform: capitalize;
-  font-size: 5vw;
+  font-size: 6vw;
 }
 
 /* Footer */
@@ -186,14 +186,32 @@ footer::after {
 
 /* Media Queries */
 
+/* 43em = 688px */
 @media only screen and (min-width: 43em) {
   .gameButtonsContainer {
     width: 90%;
     justify-content: space-between;
     margin: 10% 0;
   }
+
+  h1 {
+    font-size: 8.5vw;
+  }
+
+  .score {
+    font-size: 4em;
+  }
+
+  #gameText {
+    font-size: 2.5em;
+  }
+
+  .material-icons-outlined {
+    font-size: 4em;
+  }
 }
 
+/* 62em = 992px */
 @media only screen and (min-width: 62em) {
   .gameButtonsContainer {
     width: 80%;
@@ -234,6 +252,7 @@ footer::after {
   }
 }
 
+/* 82em = 1312px */
 @media only screen and (min-width: 82em) {
   .gameButtonsContainer {
     width: 60%;
