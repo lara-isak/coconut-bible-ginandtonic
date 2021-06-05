@@ -199,17 +199,9 @@ footer::after {
     width: 80%;
     margin: 5% 0;
   }
-}
-
-@media only screen and (min-width: 82em) {
-  .gameButtonsContainer {
-    width: 60%;
-    justify-content: space-around;
-    margin: 5% 0;
-  }
 
   h1 {
-    font-size: 5.5em;
+    font-size: 5em;
   }
 
   .score {
@@ -217,7 +209,7 @@ footer::after {
   }
 
   #gameText {
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
 
   .material-icons-outlined {
@@ -226,5 +218,29 @@ footer::after {
 
   img {
     width: 80%;
+  }
+
+  .players {
+    justify-content: space-around;
+  }
+
+  .players p {
+    font-size: 3em;
+  }
+  
+  .fleabag p:last-child, 
+  .priest p:last-child {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 82em) {
+  .gameButtonsContainer {
+    width: 60%;
+    justify-content: center;
+  }
+
+  .players {
+    width: 30%;
   }
 }
