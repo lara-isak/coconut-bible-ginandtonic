@@ -57,7 +57,7 @@ main {
 #gameText {
   height: 4.5vh;
   text-align: center;
-  color: #e2e2e7;
+  color: #b9b9b9;
   font-size: 6vw;
   letter-spacing: 0.04em;
   margin: 10px 0;
@@ -134,6 +134,7 @@ main {
 .priest p:last-child {
   text-transform: capitalize;
   font-size: 6vw;
+  color: #b9b9b9;
 }
 
 /* Footer */
