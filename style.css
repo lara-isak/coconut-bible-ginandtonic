@@ -43,15 +43,13 @@ main {
   display: flex;
   color: #e2e2e7;
   font-size: 9vw;
+  width: 15vw;
+  text-align: center;
 }
 
-.fleabagScore::after {
-  content: " :" ;
-}
-
-.hotPriestScore::before {
-  /* Unicode for non breaking space */
-  content: "\00a0";
+.fleabagScore,
+.hotPriestScore  {
+  width: 50%;
 }
 
 #gameText {
@@ -201,6 +199,7 @@ footer::after {
 
   .score {
     font-size: 4em;
+    width: 2em;
   }
 
   #gameText {
