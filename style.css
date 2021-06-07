@@ -159,6 +159,31 @@ footer::after {
   z-index: 2;
 }
 
+.footnotes {
+  z-index: 3;
+  color: #e2e2e7;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -40%);
+  font-size: 1em;
+  letter-spacing: 0.04em;
+  width: 100%;
+  text-align: center;
+}
+
+.footnotes p:first-child {
+  margin-bottom: 5px;
+}
+
+.footnotes p:last-child {
+  color: #b9b9b9;
+}
+
+.footnotes p:last-child a {
+  text-decoration: none;
+  color: #e2e2e7;
+}
+
 .fleabagSpiritAnimal {
   width: 80px;
   height: 80px;
@@ -209,6 +234,7 @@ footer::after {
   .material-icons-outlined {
     font-size: 4em;
   }
+
 }
 
 /* 62em = 992px */
