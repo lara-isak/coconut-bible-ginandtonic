@@ -15,7 +15,7 @@ The outcome of each round is determined by 3 simple rules:
 
 ### :thumbsup: Motivation behind the project
 
-Better understanding of the **JavaScript execution context** and **CSS stacking context** while adding a personal spin to ensure focus (and motivation) on completing the project. 
+Better understanding of the **JavaScript execution context** and **CSS stacking context**
 
 ### :seedling: What I learned
 :arrow_right: how to recognize **logical blocks of code** and enclose them in **functions** </br>
