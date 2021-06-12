@@ -4,8 +4,6 @@ Coconut-Bible-G&T is a variation of a Rock-Paper-Scissors game build with **HTML
 
 You can play the game [here](https://lara-isak.github.io/coconut-bible-ginandtonic/).
 
-![](images/c-b-g&t-screenshot.png)
-
 ### :game_die:	Game rules
 The rules are pretty simple. The player (**Fleabag**) is playing against the machine (**Priest**). Whoever gets to 5 points, wins. :trophy: </br>
 The outcome of each round is determined by 3 simple rules:
@@ -24,6 +22,6 @@ Better understanding of the **JavaScript execution context** and **CSS stacking 
 :arrow_right: how to use **pseudo elements** to "manipulate" **stacking context** </br>
 :arrow_right: how to utilise the power of **relative length units** (em, vw / vh) and **media queries** to ensure responsivness on various devices 
 
-
+![](images/c-b-g&t-screenshot.png)
 
 
