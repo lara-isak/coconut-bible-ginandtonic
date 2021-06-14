@@ -210,7 +210,7 @@ footer::after {
 
 /* Media Queries */
 
-/* 43em = 688px */
+/* Portrait (default) mode & min-width: 43em (688px) */
 @media only screen and (min-width: 43em) {
   h1 {
     font-size: 8.5vw;
@@ -237,7 +237,7 @@ footer::after {
 
 }
 
-/* Default landscape mode */
+/* Landscape mode for devices up to width: 62em*/
 @media only screen and (orientation: landscape) {
   h1 {
     font-size: 4.5vw;
@@ -288,8 +288,7 @@ footer::after {
   }
 }
 
-
-/* 62em = 992px */
+/* Portrait (default) mode & min-width: 62em (992px) */
 @media only screen and (min-width: 62em) {
   .gameButtonsContainer {
     width: 80%;
@@ -330,7 +329,22 @@ footer::after {
   }
 }
 
-/* 82em = 1312px */
+/* Landscape mode for devices up to width: 82em*/
+@media only screen and (min-width: 62em) and (orientation: landscape) {
+.gameButtonsContainer {
+  margin: 4% 0;
+}
+
+.gameButton > img {
+  width: 35%;
+}
+
+footer {
+  display: block;
+  }
+}
+
+/* Portrait (default) mode & min-width: 82em (1312px) */
 @media only screen and (min-width: 82em) {
   .gameButtonsContainer {
     width: 60%;
@@ -339,5 +353,12 @@ footer::after {
 
   .players {
     width: 30%;
+  }
+}
+
+/* Landscape mode for devices with min-width: 82em*/
+@media only screen and (min-width: 82em) and (orientation: landscape) {
+  .gameButton > img {
+    width: 40%;
   }
 }
