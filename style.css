@@ -210,66 +210,8 @@ footer::after {
 
 /* Media Queries */
 
-/* Default landscape mode */
-@media only screen and (orientation: landscape) {
-  h1 {
-    font-size: 5vw;
-    margin: 5% 0;
-  }
-
-  main {
-    position: relative;
-  }
-
-  .score {
-    font-size: 5vw;
-  }
-
-  #gameText {
-    font-size: 4vw;
-  }
-
-  .material-icons-outlined {
-    font-size: 5vw;
-  }
-
-  .resetBtn {
-    position: absolute;
-    top: 0;
-    left: 60%;
-  }
-
-  .gameButtonsContainer {
-    margin: 5% 0;
-  }
-
-  .gameButton > img {
-    width: 30%;
-  }
-
-  .players p {
-    font-size: 3.5vw;
-  }
-
-  .fleabag p:last-child, 
-  .priest p:last-child {
-  font-size: 3vw;
-}
-
-  footer {
-    display: none;
-  }
-}
-
-
 /* 43em = 688px */
 @media only screen and (min-width: 43em) {
-  .gameButtonsContainer {
-    width: 90%;
-    justify-content: space-between;
-    margin: 10% 0;
-  }
-
   h1 {
     font-size: 8.5vw;
   }
@@ -287,9 +229,64 @@ footer::after {
     font-size: 4em;
   }
 
+  .gameButtonsContainer {
+    width: 90%;
+    justify-content: space-between;
+    margin: 10% 0;
+  }
+
 }
 
+/* Default landscape mode */
+@media only screen and (orientation: landscape) {
+  h1 {
+    font-size: 4.5vw;
+    margin: 5% 0;
+  }
 
+  main {
+    position: relative;
+  }
+
+  .score {
+    font-size: 4.5vw;
+  }
+
+  #gameText {
+    font-size: 3.5vw;
+  }
+
+  .material-icons-outlined {
+    font-size: 4.5vw;
+  }
+
+  .resetBtn {
+    position: absolute;
+    top: 0;
+    left: 60%;
+  }
+
+  .gameButtonsContainer {
+    margin: 4% 0;
+  }
+
+  .gameButton > img {
+    width: 30%;
+  }
+
+  .players p {
+    font-size: 3vw;
+  }
+
+  .fleabag p:last-child, 
+  .priest p:last-child {
+  font-size: 2.5vw;
+}
+
+  footer {
+    display: none;
+  }
+}
 
 
 /* 62em = 992px */
